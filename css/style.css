@@ -1,0 +1,247 @@
+.header{
+    background-image: url(../images/header.png);
+    background-repeat: no-repeat;
+    min-height: 669px;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.header:before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #3e3163;
+    opacity: 0.8;
+}
+.custom-nav{
+    padding: 0 !important;
+}
+.custom-nav .navbar-nav {
+    margin: auto;
+}
+.custom-nav .nav-link{
+    padding: 1.5rem 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+.custom-nav .nav-link:hover{
+    color: #00fae2;
+}
+.custom-nav .nav-link.active{
+    color: #00fae2;
+}
+.banner-content{
+    text-align: center;
+    margin: 135px 0px 0px 0px;
+}
+.banner-content h1{
+    color: #fff;
+    position: relative;
+    z-index: 9999;
+    font-size: 30px;
+    font-weight: normal;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.banner-content h1::before{
+    content: "";
+    width: 5%;
+    height: 2px;
+    background-color: #00fae2;
+    position: absolute;
+    bottom: 0;
+    left: 47.5%;
+}
+.main-content{
+    padding: 30px 0;
+    width: 100%;
+    float: left;
+}
+.banner-content p{
+    color: #fff;
+    z-index: 9999;
+    position: relative;
+    font-size: 14px;
+}
+.main-content h1{
+    font-size: 26px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000;
+    text-transform: uppercase;
+}
+.main-content p{
+    font-size: 14px;
+    color: #908e96;
+}
+.main-content a{
+    color: #00fae2;
+    border: 1px solid #00fae2;
+    font-size: 14px;
+    padding: 10px;
+    transition: all 0.5s;
+}
+.main-content a:hover{
+    background-color: #00fae2;
+    color: #fff;
+    text-decoration: none;
+}
+.video-content{
+    background-image: url(../images/vedio.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    float: left;
+    min-height: 550px;
+    position: relative;
+}
+.video-content::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #3e3163;
+    opacity: 0.8;
+
+}
+.video-table{
+    display: table;
+    width: 100%;
+}
+.video-cell{
+    display: table-cell;
+    height: 500px;
+    vertical-align: middle;
+}
+.video-cell a{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all0.5s;
+}
+.video-cell a:hover{
+    text-decoration: none;
+    color: #00fae2;
+}
+.video-cell a img{
+    margin-bottom: 10px;
+}
+.div-expertise{
+    width: 100%;
+    float: left;
+    padding: 30px 0;
+}
+.expert-brd h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    color: #000;
+}
+.expert-brd p {
+    color: #908e96;
+    font-size: 14px;
+}
+.expert-brd::before{
+    content: "";
+    width: 5%;
+    height: 2px;
+    background-color:#bfbdc3;
+    position: absolute;
+    bottom:0;
+    left: 47.50%;
+}
+.bottom-15 {
+    margin-bottom: 30px;
+}
+.div-services img{
+    margin-bottom: 15px;
+}
+.div-services h4{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.div-services p{
+    font-size: 14px;
+    color: #908e96;
+}
+.footer {
+    background-image: url(../images/footer.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    float: left;
+    min-height: 300px;
+}
+.footer::before{
+    content: "";
+    width: 100%;
+    height: 300px;
+    background-color: #3e3163;
+    opacity: 0.8;
+    position: absolute;
+}
+.pad-30{
+    padding-top: 30px;
+}
+.our-story{
+    width: 100%;
+}
+.our-story  h4{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.location-icon{
+    margin-right: 10px;
+}
+.location-content p {
+    color: #fff;
+    font-size: 14px;
+}
+.codaemon-about h4{
+    font-size: 26px;
+    font-weight: normal;
+    color: #20939a;
+    margin-bottom: 30px;
+}
+.codaemon-about p{
+    color: #fff;
+    font-size: 14px;
+}
+.copyright p{
+    color: #fff;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+    .custom-nav .nav-link{
+        padding: 0.5rem 1rem;
+    }
+}
+@media only screen and (max-width:575px){
+    .our-pira .float-right{
+        float: none !important;
+    }
+    .our-pira, .our-mob-story {
+        text-align: center;
+    }
+    .our-mob-story .float-left{
+        float:none !important;
+    }
+}
+@media only screen and (max-width: 480px){
+    .footer::before{
+        height: 335px;
+    }   
+}
+@media only screen and (max-width: 480px){
+    .footer::before{
+        height: 400px;
+    }   
+}
+@media only screen and (max-width:320px){
+    .footer::before{
+        height: 440px;
+    }
+}
